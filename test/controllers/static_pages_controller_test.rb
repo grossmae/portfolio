@@ -5,7 +5,7 @@ class StaticPagesControllerTest < ActionController::TestCase
   test "should get about" do
     get :about
     assert_response :success
-    assert_select "title", "About"
+    assert_select "title", "Evan Grossman"
   end
 
   test "should get apps" do
