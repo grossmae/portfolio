@@ -1,30 +1,86 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-// universal
+// colors
+$white: #FFFFFF;
+$eg-red: #EA7E7F;
+$eg-gray: #4D4B4B;
 
+// fonts
+$eg-font: Montserrat-Bold;
+
+// universal
 body {
   padding-top: 82px;
 }
 
 // typography
 
+h1 {
+  font-family: $eg-font;
+  font-size: 48px;
+  color: $eg-gray;
+}
 
-// header
-// .navbar-default {
-//   background-color: #FFFFFF;
-//   border-color: #EA7E7F;
-//   border-style: none;
-//   border-bottom: thick solid #8D8B8B;
-// }
+header
+/* navbar */
+.navbar-default {
+  background-color: $white;
+}
 
-// .nav {
-//   font-family: AvenirNext-Bold;
-//   font-size: 20px;
-//   padding-left: 10px;
-//   padding-right: 27px;
-// }
+.navbar-fixed-top {
+  background-color: $white; 
+  height: 70px;
+  border-bottom-width: 4px;
+  border-color: $eg-gray;
+}
 
-// .navbar-default .navbar-nav > li > a {
-//     color: #EA7E7F;
-// }
+.navbar-header {
+    background-color: $white;
+}
+/* title */
+.navbar-default .navbar-brand {
+  color: $eg-red;
+  padding-top: 27px;
+  padding-left: 33px;   
+  font-family: $eg-font;
+  font-size: 48px;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+    color: #5E5E5E;
+}
+
+.navbar-default .navbar-nav {
+  padding-top: 28px;
+  padding-right: 33px;
+}
+
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: $eg-red;
+    font-family: $eg-font;
+    font-size: 19px;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #333;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #E7E7E7;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background-color: #D5D5D5;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #777;
+    border-bottom-color: #777;
+}
