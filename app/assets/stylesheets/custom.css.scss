@@ -4,6 +4,7 @@
 // colors
 $white: #FFFFFF;
 $eg-red: #EA7E7F;
+$eg-blue: #4A90E2;
 $eg-gray: #4D4B4B;
 
 // fonts
@@ -22,15 +23,15 @@ h1 {
   color: $eg-gray;
 }
 
-header
-/* navbar */
-.navbar-default {
-  background-color: $white;
-}
+
+// /* navbar */
+// // .navbar-default {
+// //   background-color: $white;
+// // }
 
 .navbar-fixed-top {
   background-color: $white; 
-  height: 70px;
+  // height: 70px;
   border-bottom-width: 4px;
   border-color: $eg-gray;
 }
@@ -38,28 +39,39 @@ header
 .navbar-header {
     background-color: $white;
 }
+
+.navbar-collapse {
+  border: none;
+}
+
+.navbar-collapse ul {
+    background-color: $white;
+}
+
 /* title */
 .navbar-default .navbar-brand {
   color: $eg-red;
-  padding-top: 27px;
-  padding-left: 33px;   
+  padding-top: 22px;
+  // padding-left: 33px;   
   font-family: $eg-font;
-  font-size: 48px;
+  font-size: 32px;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: #5E5E5E;
+    color: $eg-blue;
 }
 
 .navbar-default .navbar-nav {
-  padding-top: 28px;
-  padding-right: 33px;
+  margin-top: 12px;
+  // padding-right: 33px;
 }
 
 /* link */
 .navbar-default .navbar-nav > li > a {
     color: $eg-red;
     font-family: $eg-font;
+    float: right;
+    clear: right;
     font-size: 19px;
 }
 
