@@ -8,7 +8,8 @@ $eg-blue: #4A90E2;
 $eg-gray: #4D4B4B;
 
 // fonts
-$eg-font: Montserrat-Bold;
+$eg-font-bold: Montserrat-Bold;
+$eg-font: AvenirNext-Regular, Montserrat;
 
 // universal
 body {
@@ -23,11 +24,17 @@ h1 {
   color: $eg-gray;
 }
 
+p {
+  font-family: $eg-font;
+  font-size: 24px;
+  color: #4A4A4A;
+}
 
-// /* navbar */
-// // .navbar-default {
-// //   background-color: $white;
-// // }
+span {
+  font-family: $eg-font;
+  font-size: 24px;
+  color: #4A4A4A;
+}
 
 .navbar-fixed-top {
   background-color: $white; 
@@ -53,7 +60,7 @@ h1 {
   color: $eg-red;
   padding-top: 22px;
   // padding-left: 33px;   
-  font-family: $eg-font;
+  font-family: $eg-font-bold;
   font-size: 32px;
 }
 .navbar-default .navbar-brand:hover,
@@ -69,7 +76,7 @@ h1 {
 /* link */
 .navbar-default .navbar-nav > li > a {
     color: $eg-red;
-    font-family: $eg-font;
+    font-family: $eg-font-bold;
     float: right;
     clear: right;
     font-size: 19px;
@@ -95,4 +102,18 @@ h1 {
 .navbar-default .navbar-nav > .dropdown > a .caret {
     border-top-color: #777;
     border-bottom-color: #777;
+}
+
+/* about */
+.about-container {
+  margin-top: 40px;
+}
+
+
+.about-description {
+  text-align: justify;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: middle;
 }
