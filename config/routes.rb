@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'icons/new'
+
   get 'projects/new'
 
   root 'static_pages#about'

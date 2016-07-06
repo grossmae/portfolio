@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160706032713) do
+ActiveRecord::Schema.define(version: 20160706045155) do
+
+  create_table "icons", force: :cascade do |t|
+    t.string   "image_url"
+    t.integer  "project_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "icons", ["project_id"], name: "index_icons_on_project_id"
 
   create_table "projects", force: :cascade do |t|
     t.string   "title"
