@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'projects/new'
+
   root 'static_pages#about'
   get 'static_pages/apps'
   get 'static_pages/contact'
