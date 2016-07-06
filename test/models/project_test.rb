@@ -36,4 +36,13 @@ class ProjectTest < ActiveSupport::TestCase
     @project.screenshots = []
     assert_not @project.valid?
   end
+
+  test "title should be unique" do
+    dup_project = @project.dup
+    dup_project.screenshots << Screenshot.new(image_url: "test.png")
+    dup_project.icon = Icon.new(image_url: "test.png")
+    @project.save
+    assert_not dup_project.valid?
+  end
+
 end
