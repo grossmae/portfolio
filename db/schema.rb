@@ -11,15 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160706031440) do
-
-  create_table "apps", force: :cascade do |t|
-    t.string   "title"
-    t.string   "subtitle"
-    t.string   "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-  end
+ActiveRecord::Schema.define(version: 20160706032713) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "title"
@@ -34,6 +26,7 @@ ActiveRecord::Schema.define(version: 20160706031440) do
     t.integer  "project_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string   "image_url"
   end
 
   add_index "screenshots", ["project_id"], name: "index_screenshots_on_project_id"
