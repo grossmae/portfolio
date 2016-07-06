@@ -4,8 +4,8 @@ class ProjectTest < ActiveSupport::TestCase
   
   def setup
     @project = Project.new(title: "Example Project", subtitle: "This project will test the limits", description: "This is a test app.  It tests everything.  Not really though.")
-    @project.screenshots << Screenshot.new
-    @project.icon = Icon.new
+    @project.screenshots << Screenshot.new(image_url: "test.png")
+    @project.icon = Icon.new(image_url: "test.png")
   end
 
   test "should be valid" do
