@@ -24,6 +24,11 @@ h1 {
   color: $eg-gray;
 }
 
+h3 {
+  font-family: $eg-font;
+  color: $eg-gray;
+}
+
 p {
   font-family: $eg-font;
   font-size: 24px;
@@ -109,11 +114,58 @@ span {
   margin-top: 40px;
 }
 
-
 .about-description {
   text-align: justify;
   padding-top: 40px;
   padding-left: 20px;
   padding-right: 20px;
   vertical-align: middle;
+}
+
+/* projects */
+
+.project {
+  display: inline-block;
+  height: 85px;
+  width: 300px;
+  margin-top: 60px;
+  margin-right: 20px;
+  height: 80px;
+}
+
+.project:hover {
+  cursor: hand;
+  cursor: pointer;
+}
+
+.project:hover .project-title {
+  color: $eg-red;
+}
+
+icon {
+  height: 80px;
+  width: 80px;
+  background: #D8D8D8;
+  border-radius: 23px;
+  float: left;
+}
+
+.project-title {
+  width: 200px;
+  display: block;
+  margin-top: 7px;
+  margin-left: 10px;
+  margin-bottom: 4px;
+  float: left;
+}
+
+.project-subtitle {
+  vertical-align: top;
+  display: block;
+  width: 200px;
+  margin-left: 10px;
+  float: left;
+  word-wrap: normal;
+  font-size: 14px;
+  line-height: 110%;
 }
