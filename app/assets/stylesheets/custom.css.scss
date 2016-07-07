@@ -169,3 +169,19 @@ icon {
   font-size: 14px;
   line-height: 110%;
 }
+
+.gallery {
+  height: 420px;
+  width: 300px;
+  background-color: $eg-red;
+}
+
+.project-description {
+  margin-top: 35px;
+  margin-left: 25px;
+}
+.project-description p {
+  margin-bottom: 28px;
+  line-height: 110%;
+  font-size: 20px;
+}

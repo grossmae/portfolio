@@ -1,6 +1,8 @@
-<div class="project">
-  <icon>
-  </icon>
-  <h3 class="project-title"> <%= project.title %> </h3>
-  <p class="project-subtitle"> <%= project.subtitle %> </p>
-</div>
+<%= link_to project do %>
+  <div class="project">
+    <icon>
+    </icon>
+    <h3 class="project-title"> <%= project.title %> </h3>
+    <p class="project-subtitle"> <%= project.subtitle %> </p>
+  </div>
+<% end %>

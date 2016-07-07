@@ -1,0 +1,18 @@
+<%= provide(:title, @project.title) %>
+<div class="about-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <%= render 'layouts/gallery' %>
+        </div>
+        <div class="col-sm-6">
+          <h1> <%= @project.title %> </h1>
+          <div class="project-description">
+            <% @project.description.split('.').each do |sentence| %>
+              <p> <%= sentence %> </p>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
