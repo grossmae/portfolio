@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'static_pages/apps'
   get 'static_pages/contact'
 
-  resources :projects
+  resources :projects, only: [:index, :show]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
