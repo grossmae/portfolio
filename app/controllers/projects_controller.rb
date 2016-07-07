@@ -9,6 +9,10 @@ class ProjectsController < ApplicationController
     @project = Project.find(params[:id])
   end
 
+  def to_param
+    title
+  end
+  
   private
 
     def record_not_found
