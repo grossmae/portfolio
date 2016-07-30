@@ -1,9 +1,24 @@
+<script type="text/javascript">
+ $(function() {
+$(".thumbnail-shot").click(function() {
+  var image = $(this).attr("src");
+$('#featured-shot').hide();
+$('#featured-shot').fadeIn('slow');
+$('#featured-shot').attr("src", image);
+return false;
+  });
+});
+</script>
+
 <div id="gallery">
-  <%= image_tag project.screenshots.first, :id => "featured-shot" %>
+  <div id="featured">
+    <%= image_tag project.screenshots.first.image_url, :id => "featured-shot" %>
+  </div>
+  
 
   <div id="thumbnails">
     <% @project.screenshots.each do |shot| %>
-      <%= image_tag shot, :class => "thumbnail-shot" %>
+      <%= image_tag shot.image_url, :class => "thumbnail-shot" %>
     <% end %>
   </div>
 </div>
