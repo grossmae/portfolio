@@ -1,5 +1,9 @@
 <% provide(:title, 'Apps') %>
+<div class="container">
+  <% @projects.each do |project| %>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+      <%= render project %>   
+    </div>
+  <% end%>
+</div>
 
-<% @projects.each do |project| %>
-  <%= render project %>
-<% end %>

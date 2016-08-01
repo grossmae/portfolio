@@ -131,12 +131,14 @@ span {
 
 /* projects */
 
+.project-list li {
+  list-style: none;
+}
+
 .project {
-  display: inline-block;
   height: 85px;
   width: 300px;
   margin: 30px auto;
-  height: 80px;
 }
 
 .project:hover {
