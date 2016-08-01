@@ -14,9 +14,10 @@ return false;
   <%= image_tag project.screenshots.first.image_url, :id => "featured-shot" %>
   
 
-  <div id="thumbnails">
+  <div id="thumbnails" >
     <% @project.screenshots.each do |shot| %>
       <%= image_tag shot.image_url, :class => "thumbnail-shot" %>
     <% end %>
+    <span class="stretch"></span>
   </div>
 </div>

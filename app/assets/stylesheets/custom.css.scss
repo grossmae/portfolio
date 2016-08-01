@@ -172,14 +172,28 @@ span {
 }
 
 #thumbnails {
-  padding-top: 10px;
-  width: 300px;
+  width: 200px;
+  margin: 0 auto;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+
 }
 
-#thumbnails img {
-  float: left;
-  height: 40px;
-  width: 30px;
+.thumbnail-shot {
+  height: 100px;
+  width: auto;
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1
+}
+
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0;
+  line-height: 0;
 }
 
 .icon {
