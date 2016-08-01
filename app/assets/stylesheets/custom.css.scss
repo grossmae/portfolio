@@ -114,12 +114,19 @@ span {
   margin-top: 40px;
 }
 
+.about-image {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+
 .about-description {
   text-align: justify;
-  padding-top: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
-  vertical-align: middle;
+  padding-top: 30px;
+  display: block;
+  margin: 0 auto;
+  max-width: 400px;
 }
 
 /* projects */
@@ -128,8 +135,7 @@ span {
   display: inline-block;
   height: 85px;
   width: 300px;
-  margin-top: 60px;
-  margin-right: 20px;
+  margin: 30px auto;
   height: 80px;
 }
 
