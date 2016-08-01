@@ -154,9 +154,21 @@ span {
 
 /* gallery */
 
+.shot-container {
+  max-width: 400px;
+  margin: auto;
+  background-color: red;
+}
+
+.featured {
+  margin: 0px auto;
+}
+
 #featured-shot {
-  height: 400px;
-  width: auto;
+  width: 100%;
+  max-width: 360px;
+  display: block;
+  margin: 0 auto;
 }
 
 #thumbnails {
@@ -168,7 +180,6 @@ span {
   float: left;
   height: 40px;
   width: 30px;
-  margin: 0 auto;
 }
 
 .icon {
@@ -197,12 +208,6 @@ span {
   word-wrap: normal;
   font-size: 14px;
   line-height: 110%;
-}
-
-.gallery {
-  height: 420px;
-  width: 300px;
-  background-color: $eg-red;
 }
 
 .project-description {

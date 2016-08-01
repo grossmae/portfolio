@@ -10,10 +10,8 @@ return false;
 });
 </script>
 
-<div id="gallery">
-  <div id="featured">
-    <%= image_tag project.screenshots.first.image_url, :id => "featured-shot" %>
-  </div>
+<div class="gallery">
+  <%= image_tag project.screenshots.first.image_url, :id => "featured-shot" %>
   
 
   <div id="thumbnails">
