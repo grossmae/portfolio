@@ -169,10 +169,12 @@ span {
   max-width: 360px;
   display: block;
   margin: 0 auto;
+  border: 1px solid #DDDDDD;
 }
 
 #thumbnails {
-  width: 200px;
+  padding-top: 18px;
+  width: 270px;
   margin: 0 auto;
   text-align: justify;
   -ms-text-justify: distribute-all-lines;
@@ -186,7 +188,8 @@ span {
   vertical-align: top;
   display: inline-block;
   *display: inline;
-  zoom: 1
+  zoom: 1;
+  border: 1px solid #DDDDDD;
 }
 
 .stretch {
