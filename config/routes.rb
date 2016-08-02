@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
 
   root 'static_pages#about'
-  get 'static_pages/apps'
-  get 'static_pages/contact'
+  get '/contact', to: 'static_pages#contact'
 
   resources :projects, only: [:index, :show]
 
