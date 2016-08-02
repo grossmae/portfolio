@@ -5,7 +5,7 @@
 $white: #FFFFFF;
 $eg-red: #EA7E7F;
 $eg-blue: #4A90E2;
-$eg-gray: #4D4B4B;
+$eg-gray: #6A6A6A;
 
 // fonts
 $eg-font-bold: Montserrat-Bold;
@@ -39,6 +39,10 @@ span {
   font-family: $eg-font;
   font-size: 24px;
   color: $eg-gray;
+}
+
+.blue-span {
+  color: $eg-blue;
 }
 
 .navbar-fixed-top {
@@ -240,3 +244,13 @@ span {
   line-height: 110%;
   font-size: 20px;
 }
+
+// Contact
+.contact-details {
+  padding-top: 40px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+
+
