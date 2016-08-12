@@ -196,6 +196,10 @@ span {
   border: 1px solid #DDDDDD;
 }
 
+.thumbnail-shot.selected {
+  border: 2px solid $eg-red;
+}
+
 .stretch {
   width: 100%;
   display: inline-block;

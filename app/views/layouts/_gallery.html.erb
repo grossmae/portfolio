@@ -1,15 +1,3 @@
-<script type="text/javascript">
- $(function() {
-$(".thumbnail-shot").click(function() {
-  var image = $(this).attr("src");
-$('#featured-shot').hide();
-$('#featured-shot').fadeIn('slow');
-$('#featured-shot').attr("src", image);
-return false;
-  });
-});
-</script>
-
 <div class="gallery">
   <%= image_tag project.screenshots.first.image_url, :id => "featured-shot" %>
   
@@ -21,3 +9,24 @@ return false;
     <span class="stretch"></span>
   </div>
 </div>
+
+<script type="text/javascript">
+
+  var thumbs = $(".thumbnail-shot");
+  thumbs.first().addClass("selected");
+  $(function() {
+    $(".thumbnail-shot").click(function() {
+      if (!$(this).hasClass("selected")) {
+        thumbs.removeClass("selected");
+        $(this).addClass("selected");
+        var image = $(this).attr("src");
+        if (!$('#featured-shot').is(":hidden")) {
+          $('#featured-shot').hide();
+          $('#featured-shot').fadeIn('slow');
+        }
+        $('#featured-shot').attr("src", image);
+      }
+      return false;
+    });
+  });
+</script>
