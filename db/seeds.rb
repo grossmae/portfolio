@@ -51,7 +51,9 @@ studyPact = Project.new(title: "StudyPact",
                 description: "Users could commit to studying a certain ammount of hours each week.  The Android app would track their activity in educational apps.  At the end of the week, users who failed to reach their goal would have to pay and their money would be distributed to all the successful users."
                 )
 studyPact.icon = Icon.new(image_url: "study-pact/sp-icon.png")
-studyPact.screenshots << Screenshot.new(image_url: "test.png")
+studyPact.screenshots << Screenshot.new(image_url: "study-pact/sp-shot1.png")
+studyPact.screenshots << Screenshot.new(image_url: "study-pact/sp-shot2.png")
+studyPact.screenshots << Screenshot.new(image_url: "study-pact/sp-shot3.png")
 studyPact.save
 
 schooldio = Project.new(title: "Schooldio",
