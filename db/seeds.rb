@@ -1,3 +1,13 @@
+surpriseMe = Project.new(title: "SurpriseMe!",
+                subtitle: "Can't decide?  We'll provide!",
+                description: "Selects a local spot to eat with the Yelp API.  Provides a map to a secret destination.  Filters results by rating and distance."
+                )
+surpriseMe.icon = Icon.new(image_url: "surprise-me/sm-icon.png")
+surpriseMe.screenshots << Screenshot.new(image_url: "surprise-me/sm-shot1.png")
+surpriseMe.screenshots << Screenshot.new(image_url: "surprise-me/sm-shot2.png")
+surpriseMe.screenshots << Screenshot.new(image_url: "surprise-me/sm-shot3.png")
+surpriseMe.save
+
 dougaBox = Project.new(title: "Douga Box",
                 subtitle: "Share files, from your phone to the world",
                 description: "File sharing app with a simple interface.  Supports transfers of files over 1GB.  Features a folder and file organization system."
